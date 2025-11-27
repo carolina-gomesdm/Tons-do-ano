@@ -164,7 +164,7 @@ p, h4, h5, a {
 
 @media (max-width:  410px) {
     .card {
-        aspect-ratio: 2 / 6; 
+        aspect-ratio: 3 / 5; 
         font-size: 1rem;
     }
 }
@@ -260,8 +260,8 @@ p, h4, h5, a {
     height: 28rem !important;
   }
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 28rem !important;
+    width: 20rem !important;
+    height: 20rem !important;
   }
 }
 
