@@ -86,7 +86,7 @@ p, h4, h5, a {
     background-size: cover;
 }
 
-#fundocont {
+.fundobege {
     background-color: #FFF3B0;
 }
 
@@ -169,6 +169,12 @@ p, h4, h5, a {
     }
 }
 
+@media (max-width:  350px) {
+    .card {
+        font-size: 1rem;
+    } 
+}
+
 /*---------- Significado das cores ---------*/
 
 .bege {
@@ -213,6 +219,41 @@ p, h4, h5, a {
     border: 2px solid #9e2a2b;
     border-radius: 5px;
 }
+
+/*------------ Ação dos Meses complementares -----------------*/
+
+.borda1, hr {
+  border: 5px solid #4BA145;
+  border-radius: 5px;
+}
+
+.borda2, hr {
+  border: 5px solid transparent ;
+  border-image: linear-gradient(to bottom, #D04ED4, #728ED6, #46D9B6);
+  border-image-slice: 1;
+}
+
+.borda2 hr {
+  border: 5px solid #D04ED4;
+}
+
+.borda3, hr {
+  border: 5px solid #59BA47;
+  border-radius: 5px;
+}
+
+#gradiente1 {
+  background-image: linear-gradient(#335C67, #FFF3B0);
+}
+
+#gradiente2 {
+  background-image: linear-gradient(#e09f3e, #FFF3B0);
+}
+
+#gradiente3 {
+  background-image: linear-gradient(#9e2a2b, #FFF3B0);
+}
+
 /*------------ Equipe --------------*/
 
 .container {
@@ -247,8 +288,7 @@ p, h4, h5, a {
 .tranding-slide {
   width: 37rem;
   height: 37rem;
-  position: relative;
-  background-color:#FFF3B0;
+  position: relative; 
   border-radius: 20px;
   text-align: center;
   padding: 10px;
@@ -256,12 +296,12 @@ p, h4, h5, a {
 
 @media (max-width:500px) {
   .tranding-slide {
-    width: 28rem !important;
-    height: 28rem !important;
+    width: 30rem !important;
+    height: 35rem !important;
   }
   .tranding-slide .tranding-slide-img img {
-    width: 20rem !important;
-    height: 20rem !important;
+    width: 28rem !important;
+    height: 28rem !important;
   }
 }
 
@@ -353,4 +393,35 @@ p, h4, h5, a {
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: black;
+}
+
+/*---------------- Contato ---------------------*/
+
+#fundocont {
+  background-color: #fff3b0b0;
+  backdrop-filter: blur(15px) brightness(95%) drop-shadow(4px 4px 10px #fff3b0);
+}
+
+form input[type=text], input[type=email] {
+  border-radius: 15px;
+  background-color: #fff5dbc8;
+  backdrop-filter: brightness(105%);
+}
+
+.form-select {
+  border-radius: 10px;
+  background-color: #fff5dbc8;
+  backdrop-filter: brightness(105%);
+}
+
+#coment textarea {
+  border-radius: 10px;
+  background-color: #fff5dbc8;
+  backdrop-filter: brightness(105%);
+}
+
+#contatolg {
+  background-image: url(imgs/fundocontato.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
