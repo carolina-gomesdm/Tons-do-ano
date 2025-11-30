@@ -256,6 +256,13 @@ p, h4, h5, a {
 
 /*------------ Equipe --------------*/
 
+.equipetext {
+  background-color: #fff5dbc8;
+  width: 20%;
+  height: 2.5rem;
+  border-radius: 15px;
+}
+
 .container {
   max-width: 124rem;
   padding: 0 1rem;
