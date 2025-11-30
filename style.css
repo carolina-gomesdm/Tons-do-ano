@@ -281,12 +281,6 @@ p, h4, h5, a {
   position: relative;
 }
 
-@media (max-width:500px) {
-  #equipe .tranding-slider {
-    height: 45rem;
-  }
-}
-
 .tranding-slide {
   width: 37rem;
   height: 37rem;
@@ -297,13 +291,16 @@ p, h4, h5, a {
 }
 
 @media (max-width:500px) {
+  #equipe .tranding-slider {
+    height: 38rem;
+  }
   .tranding-slide {
-    width: 30rem !important;
+    width: 35rem !important;
     height: 35rem !important;
   }
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 28rem !important;
+    width: 25rem !important;
+    height: 25rem !important;
   }
 }
 
@@ -342,16 +339,6 @@ p, h4, h5, a {
     left: 70% !important;
     transform: translateX(-70%) !important;
   }
-}
-
-@media (max-width:450px) {
-  .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-  }
-}
-
-@media (max-width:990px) {
   .tranding-slider-control .swiper-button-prev {
     left: 30% !important;
     transform: translateX(-30%) !important;
@@ -359,6 +346,10 @@ p, h4, h5, a {
 }
 
 @media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
   .tranding-slider-control .swiper-button-prev {
     left: 20% !important;
     transform: translateX(-20%) !important;
