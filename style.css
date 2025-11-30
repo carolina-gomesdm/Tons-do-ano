@@ -265,6 +265,8 @@ p, h4, h5, a {
 #equipe {
   padding: 4rem 0;
   background-image: url(imgs/Fundoequipe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width:1440px) {
