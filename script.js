@@ -31,4 +31,31 @@ card.forEach(card => {
 form.addEventListener('submit', function (e) { 
   e.preventDefault(); })
 
+/*----------- formulario----------------*/
 
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const comment = document.getElementById('comment').value;
+
+  const formData = {
+        nome: nome,
+        email: email,
+        comment: comment
+    };
+
+
+    saveFormData(formData);
+});
+
+function saveFormData(formData) {
+    const storedFormData = JSON.parse(localStorage.getItem('formData')) || [];
+
+    storedFormData.push(formData);
+
+    localStorage.setItem('formData', JSON.stringify(storedFormData));
+}

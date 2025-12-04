@@ -350,19 +350,19 @@
         <section id="contato" class=" h-auto d-flex justify-content-center">
             <div id="fundocont" class="container-md shadow p-5 rounded-3">
                 <div class="row">
-                    <form class="col-lg container my-4">
+                    <form class="col-lg container my-4" id="formulario">
                         <div class="text-center">
                             <h2> Entre em contato conosco! </h2>
                             <p class="font-m"> Tem uma dúvida ou sugestão? Estamos sempre por aqui! </p>
                         </div>
                         <div>
                             <label for="nome"> Nome: </label>
-                            <input type="text" class="form-control my-3" id="nome" placeholder="Seu nome" required>
+                            <input type="text" class="form-control my-3" id="nome" name="nome" placeholder="Seu nome" required>
                         </div>
 
                         <div>
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control my-3" id="email" placeholder="Seu email" name="email" required>
+                            <input type="email" class="form-control my-3" id="email" name="email" placeholder="Seu email" name="email" required>
                         </div>
 
                         <div class="row p-2">
@@ -381,7 +381,7 @@
                             <div class="col-sm my-4">
                                 <label class="mb-3" for="novomes"> Nos diga qual é o próximo mês que você gostaria de vê por
                                     aqui! </label>
-                                <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <select  id="novomes" name="novomes" class="form-select form-select-sm" aria-label=".form-select-sm example">
                                     <option value="jan"> janeiro </option>
                                     <option value="fev"> Fevereiro </option>
                                     <option value="mar"> Março </option>
@@ -397,11 +397,11 @@
 
                         <div id="coment">
                             <label for="comment"> Quer adicionar algum comentário? </label>
-                            <textarea class="form-control" rows="5" id="comment" placeholder="Escreva aqui!" name="text"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="Escreva aqui!" name="text"></textarea>
                         </div>
 
                         <div class="d-flex justify-content-end my-2">
-                            <input class="btn btn-outline-success" type="submit">
+                            <input class="btn btn-outline-success" type="submit" value="enviar">
                         </div> 
                     </form>
 
