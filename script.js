@@ -28,9 +28,6 @@ card.forEach(card => {
   });
 });
 
-form.addEventListener('submit', function (e) { 
-  e.preventDefault(); })
-
 /*----------- formulario----------------*/
 
 const form = document.querySelector('form');
