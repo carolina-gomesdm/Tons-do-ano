@@ -422,6 +422,7 @@ form input[type=text], input[type=email] {
 }
 
 #coment textarea {
+  resize: none;
   border-radius: 10px;
   background-color: #fff5dbc8;
   backdrop-filter: brightness(105%);
